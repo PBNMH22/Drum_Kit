@@ -3,7 +3,7 @@ for (let i = 0; i<document.querySelectorAll(".drum").length; i++){
 
 
 
-document.querySelectorAll(".drum")[i].addEventListener("click", handleClick);
+document.querySelectorAll(".drum")[i].addEventListener("click", function(){
 
 var buttonInnerHTML = this.innerHTML;
 
@@ -47,5 +47,6 @@ switch (buttonInnerHTML){
 
     default: console.log(buttonInnerHTML)
 }
+});
 
 }
